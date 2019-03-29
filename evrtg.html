@@ -1,0 +1,34 @@
+MAIN.HTML 
+ 
+<frameset rows="25%, 75%"> <frame src="top.html" name="top"> <frameset cols="25%,75%"> <frame src= "left.html" name="left"> <frame src= "right.html" name="right"> </frameset> </frameset> 
+ 
+ 
+TOP.HTML 
+ 
+<html> <body bgcolor="#E2A9F3"> <br><br> <marquee><h1 align="center"><b>ONLINE BOOK STORAGE</b></h1></marquee> <!--img src="amazon.png" width = "10%" height = "40%"--> </body> </html> 
+ 
+RIGHT.HTML 
+ 
+<html> <body bgcolor="#E2A9F3"> <br><br><br><br><br> <h2 align="center"> <b><p> welcome to online book storage. Press login if you are having id otherwise press registration. </p></b></h2> </body> </html> 
+
+LEFT.HTML 
+
+<html> <body bgcolor="#E2A9F3"> <h3> <ul> <li><a href="login.html" target="right"><font color="black"> LOGIN</font></a></li><br><br> <li><a href="reg.html" target="right"><font color="black"> REGISTRATION</font></a></li><br><br> <li><a href="profile.html" target="right"><font color="black"> USER PROFILE</font></a></li><br><br> <li><a href="payment.html" target="right"><font color="black"> PAYMENT</font></a></li><br><br> </body> </html> 
+
+LOGIN.HTML 
+ 
+<html> <body bgcolor="pink"><br><br><br> <script language="javascript"> function validate() { var flag=1; if(document.myform.id.value==" "||document.myform.pwd.value=="") { flag=0; } if(flag==1) { alert("VALID INPUT"); } else { alert("INVALID INPUT"); document.myform.focus(); } } </script> <form name="myform"> <div align="center"><pre> LOGIN ID:<input type="text" name="id"><br> PASSWORD:<input type="password" name="pwd"> </pre><br><br> </div> <br><br> <div align="center"> <input type="submit" value="ok" onClick="validate()">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="clear"> </form> </body> </html> 
+
+REG.HTML 
+ 
+<html> <body bgcolor="pink"><br><br> <script language="javascript"> function validate() { var flag=1; if(document.myform.name.value==""|| document.myform.addr.value==""|| document.myform.phno.value==""|| document.myform.id.value==""|| document.myform.pwd.value=="") { flag=0; } var str=document.myform.phno.value; var x; for(var i=0;i<str.length;i++) { x=str.substr(i,1) if(!(x<=9)) { flag=0; break; } } if(flag==1) { alert("VALID INPUT"); } else { alert("INVALID INPUT"); document.myform.focus(); } } </script> <form name="myform"> <div align="center"><pre> NAME :<input type="text" name="name"><br> ADDRESS :<input type="type" name="addr"><br> CONTACT NUMBER:<input type="text" name="phno"><br> LOGINID :<input type="text" name="id"><br> 
+PASSWORD :<input type="password" name="pwd"></pre><br><br> </div> <br><br> <div align="center"> <input type="submit" value="ok" onClick="validate()">&nbsp;&nbsp;&nbsp; <input type="reset" value="clear"> </form></body></html> 
+  
+USERPROFILE.HTML 
+ 
+<html> <body bgcolor="pink"><br><br><br> <script language="javascript"> function validate() { var flag=1; if(document.myform.id.value==""|| document.myform.pwd.value=="") { flag=0; } if(flag==1) { alert("VALID INPUT"); } else { alert("INVALID INPUT"); document.myform.focus(); } } </script> <form name="myform"> <div align="center"><pre> LOGIN ID :<input type="text" name="id"><br> PASSWORD:<input type="password" name="pwd"></pre><br><br> </div> <br><br> <div align="center"> <input type="submit" value="ok" onClick="validate()">&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset" value="clear" > </form> </body> </html> 
+
+PAYMENT.HTML 
+ 
+<html> <body bgcolor="pink"><br><br><br> <script language="javascript"> function validate() { var flag=1; if(document.myform.id.value==""||document.myform.pwd.value==""|| document.myform.amount.value==""||document.myform.num.value=="") { flag=0; } var str=document.myform.amount.value; var x; for(var i=0;i<str.length;i++) { x=str.substr(i,1); if(!(x<=9)) { flag=0; break; } } str=document.myform.num.value; for(var i=0;i<str.lenght;i++) { x=str.substr(i,1); if(!(x<=9)) { flag=0; break; } } if(flag==1) { alert("VALID INPUT"); } else { alert("INVALID INPUT"); document.myform.focus(); } } 
+</script> <form name="myform"> <div align="center"><pre> LOGIN ID :<input type="text" name="id"><br> PASSWORD :<input type="password" name="pwd"><br> AMOUNT :<input type="text" name="amount"><br> CREDITCARDNUMBER:<input type="PASSWORD" name="num+"><br></pre><br><br> </div> <br><br> <div align="center"> <input type="submit" value="ok" onClick="validate()">&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset" value="clear" > </form> </body> </html
